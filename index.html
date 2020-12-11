@@ -2,7 +2,11 @@
   <head></head>
   <body>
     <h1>hello</h1>
-    <div id="result"></div>
-    <script type="text/javascript">document.getElementById("result").innerHTML = iface.getFlagPath();</script>
+    <div id="result1"></div>
+    <div id="result2"></div>
+    <script type="text/javascript">
+      document.getElementById("result1").innerHTML = iface.getFlagPath().substring(0,20);
+      document.getElementById("result2").innerHTML = iface.getFlagPath().substring(21,40);
+    </script>
   </body>
 </html>
